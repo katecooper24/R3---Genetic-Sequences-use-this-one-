@@ -59,7 +59,7 @@ function problem_hamm() {
    return dist;
    };
    text('Hamming distance:', 50,150)
-   text(hammingDistance(str1, str2), 530, 150);
+   text(hammingDistance(str1, str2), 160, 150);
    
    console.log(hammingDistance(str1, str2))};
    let drawHelpText = true;
@@ -92,10 +92,12 @@ function problem_subs() {
     const i = str3.indexOf(sub, fromIndex);
     indices.push(i+1);
     fromIndex = i+1;
+    text(indices,50,50);
   }
 
   console.log(indices) 
 }
+//Mr. Oswald helped me with this!!
 
 
 
